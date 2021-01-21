@@ -25,18 +25,21 @@ function accessElementInArray(array, index) {
   return array[index];
 }
 
-function destructivelyRemoveElementFromBeginningOfArray() {
-  
+function destructivelyRemoveElementFromBeginningOfArray(chocolateBars) {
+  chocolateBars.shift();
+  return chocolateBars;
 }
 
-function removeElementFromBeginningOfArray () {
-  
+function removeElementFromBeginningOfArray (chocolateBars) {
+  chocolateBars.slice(1);
+  return chocolateBars;
 }
 
-function destructivelyRemoveElementFromEndOfArray() {
-  
+function destructivelyRemoveElementFromEndOfArray(chocolateBars) {
+  chocolateBars.pop();
+  return chocolateBars;
 }
 
-function removeElementFromEndOfArray() {
-  
+function removeElementFromEndOfArray(chocolateBars) {
+  chocolateBars.slice(0, chocolateBars.length - 1)
 }
